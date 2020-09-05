@@ -38,3 +38,21 @@ Choosing the right symbol to presents a feature such as a town depends on the ma
 *Datum: the baseline for measuring the Earth
 >Your GIS software needs to know what datum youre using for each set of map data that you put into your database. 
 >Attaching your coordinates to the wrong datum can result in location and measurement errors.
+UTM = Universal Transverse Mercator
+*divides Earth from latitude 84°North and 80°South into 60 numbered vertical zones, each 6 degrees of longitude wide
+*Has 2 places where measurements begin:
+**the equator
+**100'000'000 meters south of the equator AKA 80° South
+Benefits:
+*measure stuff in positive numbers east and north from one of the origins, regardless of which hemisphere you are located in
+##Chapter 3
+Four types of objects on your map:
+*Points: zero-dimensional
+*Lines: one-dimensional
+*Areas: two-dimensional
+*Volumes: three-dimensional
+Application Use difference between area and volume. If you are concerned with vegetaion covering a mountain, you care only about surface = area. If you are concerned with coal within a mountain, you care about the volume.
+*Nominal features cannot be compared. These could be line features, such as streets and rail lines that cannot be compared, area features, such as range of wild species and land owned by the federal government which cannot be compared, and volume features, such as water aquifers and hills that cannot be compared.
+*Ordinal features can be compared to each other according to ranking. For example, line data, types of roads could be compared, or volume data, such as ore body.
+*Interval and ratio scales can be compared on the map by size of the symbols. In some instances you may have too many items, such as cities, to give each a unique symbol.In this case you can select symbol sizes so the reader will be able to recognize.You can assign them to classes, for example population grouping between 0 and 10'000 and 10'000 and 100'000.
+*Nearest Neighbour Statistics: 1= perfectly random, 0=perfectly clustered
